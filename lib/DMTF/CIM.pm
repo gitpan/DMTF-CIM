@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 
 use DMTF::CIM::Instance;
 use Carp;
@@ -880,7 +880,7 @@ DMTF::CIM - Object Orieted Interface to a CIM Schema
 
 =head1 VERSION
 
-This document describes DMTF::CIM version 0.03
+This document describes DMTF::CIM version 0.04
 
 
 =head1 SYNOPSIS

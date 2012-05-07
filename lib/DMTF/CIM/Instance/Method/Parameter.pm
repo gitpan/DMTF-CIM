@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 require DMTF::CIM::_model;
 use Carp;
 
@@ -24,12 +24,12 @@ __END__
 
 =head1 NAME
 
-DMTF::CIM::Instance::Property - Provides access to properties from a L<DMTF::CIM::Instance>
+DMTF::CIM::Instance::Method::Parameter - Provides access to method parameters from a L<DMTF::CIM::Instance::Method>
 
 
 =head1 VERSION
 
-This document describes DMTF::CIM::Instance::Property version 0.03
+This document describes DMTF::CIM::Instance::Method::Parameter version 0.04
 
 
 =head1 SYNOPSIS
@@ -48,7 +48,7 @@ This document describes DMTF::CIM::Instance::Property version 0.03
 
 =head1 DESCRIPTION
 
-This class is returned by the property method of L<DMTF::CIM::Instance> 
+This class is returned by the parammeter method of L<DMTF::CIM::Instance::Method> 
 It is not expected to be used by itself.
 
 =head1 INTERFACE 
@@ -59,37 +59,37 @@ It is not expected to be used by itself.
 
 =item C<< new ( [ property=>I<property_def> ] [, value=>I<valueref> ] ) >>
 
-Creates a new property with the CIM property description I<property_def>
+Creates a new parameter with the CIM parameter description I<property_def>
 and a value stored at I<valueref>.
 
 =item C<< name >>
 
-Returns the name of the property using the defined case.
+Returns the name of the parameter using the defined case.
 
 =item C<< value ( [ I<newvalue> ] ) >>
 
 If the I<newvalue> list is specified, sets the value to that.  Returns the
-current mapped value.  If the property is an array, and the method is used
+current mapped value.  If the parameter is an array, and the method is used
 in a scalar context, the values are join(', ')ed.
 
 =item C<< raw_value ( [ I<newvalue> ] ) >>
 
 If the I<newvalue> list is specified, sets the value to that.  Returns the
-current unmapped value.  If the property is an array, and the method is used
+current unmapped value.  If the parameter is an array, and the method is used
 in a scalar context, the values are join(', ')ed.
 
-=item C<< is_array ( I<property> ) >>
+=item C<< is_array ( ) >>
 
-Returns a true value equal to the length of the array if the named property
+Returns a true value equal to the length of the array if the parameter
 is an array or 0 otherwise.  A zero-length array returns '0 but true'
 
-=item C<< is_ref ( I<property> ) >>
+=item C<< is_ref ( ) >>
 
-Returns true if the named property is a reference or false otherwise.
+Returns true if the parameter is a reference or false otherwise.
 
-=item C<< type ( I<property> ) >>
+=item C<< type ( ) >>
 
-Returns the type name of the specified property.  If the property is an
+Returns the type name of the parameter.  If the parameter is an
 array, will have '[]' appended.  For properties which have no type information
 in the instance, the type is assumed to be 'string'.
 
@@ -141,7 +141,7 @@ This class carp()s and returns undef (or empty list) on all errors.
 
 =head1 CONFIGURATION AND ENVIRONMENT
 
-DMTF::CIM::Instance::Property requires no configuration files or environment variables.
+DMTF::CIM::Instance::Method::Parameter requires no configuration files or environment variables.
 
 =head1 DEPENDENCIES
 

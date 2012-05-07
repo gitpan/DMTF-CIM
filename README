@@ -1,4 +1,4 @@
-DMTF-CIM version 0.03
+DMTF-CIM version 0.04
 
 Perl interface to the DMTF's CIM model.  This module is intended to provide a
 common API for accessing CIM data via various other modules.  Instances,

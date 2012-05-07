@@ -8,7 +8,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 use Carp;
 
 # Module implementation here

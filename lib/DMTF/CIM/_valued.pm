@@ -10,7 +10,7 @@ use strict;
 require DMTF::CIM::_model;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 
 our @ISA=qw(DMTF::CIM::_model);
 use Carp;
@@ -100,4 +100,6 @@ sub _value
 	}
 	return $val;
 }
+
+1;
 

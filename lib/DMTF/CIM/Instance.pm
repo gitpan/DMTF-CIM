@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 require DMTF::CIM::_model;
 
 our @ISA=qw(DMTF::CIM::_model);
@@ -160,7 +160,7 @@ DMTF::CIM::Instance - Provides access to instances in a L<DMTF::CIM> model
 
 =head1 VERSION
 
-This document describes DMTF::CIM::Instance version 0.03
+This document describes DMTF::CIM::Instance version 0.04
 
 
 =head1 SYNOPSIS

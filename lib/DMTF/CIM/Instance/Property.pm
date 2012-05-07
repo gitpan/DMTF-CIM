@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 require DMTF::CIM::_valued;
 
 our @ISA=qw(DMTF::CIM::_valued);
@@ -29,7 +29,7 @@ DMTF::CIM::Instance::Property - Provides access to properties from a L<DMTF::CIM
 
 =head1 VERSION
 
-This document describes DMTF::CIM::Instance::Property version 0.03
+This document describes DMTF::CIM::Instance::Property version 0.04
 
 
 =head1 SYNOPSIS

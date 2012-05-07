@@ -4,7 +4,7 @@ use warnings;
 use strict;
 
 use version;
-our $VERSION = qv('0.03');
+our $VERSION = qv('0.04');
 require DMTF::CIM::_model;
 use DMTF::CIM::Instance::Method::Parameter;
 use Carp;
@@ -148,7 +148,7 @@ DMTF::CIM::Instance::Method - Provides access to methods from a L<DMTF::CIM::Ins
 
 =head1 VERSION
 
-This document describes DMTF::CIM::Instance::Method version 0.03
+This document describes DMTF::CIM::Instance::Method version 0.04
 
 
 =head1 SYNOPSIS
